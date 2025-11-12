@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GearLend - Rent Tech Gadgets</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body class='bg-gray-50'>
+    <!-- Navigation -->
+    <header class='bg-white shadow-lg border-b'>
+        <nav class='max-w-7xl mx-auto px-4'>
+            <div class='flex justify-between items-center h-16'>
+                <a href='/' class='flex items-center space-x-2'>
+                    <i class='fas fa-camera text-2xl text-blue-600'></i>
+                    <span class='text-xl font-bold text-gray-900'>GearLend</span>
+                </a>
+                <div class='flex items-center space-x-6'>
+                    <a href='/' class='text-gray-700 hover:text-blue-600 font-medium'>Home</a>
+                    <a href='/gadgets' class='text-gray-700 hover:text-blue-600 font-medium'>Browse Gadgets</a>
+                    <a href='/login' class='text-gray-700 hover:text-blue-600'>Login</a>
+                    <a href='/register' class='bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700'>Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class='bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20'>
+        <div class='max-w-7xl mx-auto px-4 text-center'>
+            <h1 class='text-5xl font-bold mb-6'>Rent Tech Gadgets</h1>
+            <p class='text-xl mb-8'>Access premium cameras, drones, gaming gear & audio equipment</p>
+            <div class='space-x-4'>
+                <a href='/gadgets' class='bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100'>
+                    <i class='fas fa-search mr-2'></i>Browse Gadgets
+                </a>
+                <a href='/register' class='border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600'>
+                    <i class='fas fa-plus mr-2'></i>List Your Gear
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class='py-16 bg-white'>
+        <div class='max-w-7xl mx-auto px-4 text-center'>
+            <h2 class='text-3xl font-bold mb-12'>Popular Categories</h2>
+            <div class='grid grid-cols-2 md:grid-cols-4 gap-6'>
+                <div class='text-center p-6 bg-gray-50 rounded-lg'>
+                    <i class='fas fa-camera text-4xl text-blue-600 mb-4'></i>
+                    <h3 class='font-semibold text-lg'>Cameras</h3>
+                </div>
+                <div class='text-center p-6 bg-gray-50 rounded-lg'>
+                    <i class='fas fa-drone text-4xl text-green-600 mb-4'></i>
+                    <h3 class='font-semibold text-lg'>Drones</h3>
+                </div>
+                <div class='text-center p-6 bg-gray-50 rounded-lg'>
+                    <i class='fas fa-gamepad text-4xl text-purple-600 mb-4'></i>
+                    <h3 class='font-semibold text-lg'>Gaming</h3>
+                </div>
+                <div class='text-center p-6 bg-gray-50 rounded-lg'>
+                    <i class='fas fa-headphones text-4xl text-orange-600 mb-4'></i>
+                    <h3 class='font-semibold text-lg'>Audio</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='bg-gray-900 text-white py-12'>
+        <div class='max-w-7xl mx-auto px-4 text-center'>
+            <p>&copy; 2024 GearLend. Tech Rental Platform</p>
+        </div>
+    </footer>
+</body>
+</html>
