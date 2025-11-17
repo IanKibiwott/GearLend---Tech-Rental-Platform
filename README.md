@@ -1,100 +1,78 @@
 ﻿# 🚀 GearLend - Tech Gadget Rental Platform
 
-## 📖 Overview
-GearLend is a full-stack eCommerce platform for renting high-end tech gadgets. Built with Node.js, Express, EJS, and MySQL.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-8B0000?style=for-the-badge&logo=ejs&logoColor=white)
+
+A full-stack eCommerce platform for renting high-end tech gadgets. Built with modern web technologies and complex data structures.
+
+## ✨ Features
+
+- 🔐 User Authentication & Authorization
+- 📱 Responsive EJS Templates
+- 🗄️ MySQL Database with Relations
+- 📸 Image Upload System
+- 📅 Rental Booking Management
+- 💰 Dynamic Pricing Calculator
+- 🛡️ Security Best Practices
 
 ## 🛠️ Tech Stack
-- **Backend**: Node.js, Express.js, EJS Templates
-- **Database**: MySQL with complex relational structures
-- **Frontend**: HTML5, Tailwind CSS, JavaScript
-- **Authentication**: JWT, bcryptjs
-- **File Upload**: Multer
 
-## 🗄️ Data Structures Implemented
-
-### Database Structures
-- **Users Table**: Array-like user objects with authentication
-- **Gadgets Table**: Product catalog with JSON specifications
-- **Rentals Table**: Transaction records with status enums
-- **Categories Table**: Hierarchical product classification
-
-### Application Structures
-- **Arrays**: Collections (gadgets, users, rentals)
-- **Objects**: Entity representations (user{}, gadget{})
-- **JSON**: Complex nested data (specifications, availability)
-- **Enums**: Restricted value sets (rental status, user roles)
-
-## 🚀 Features
-- User Authentication & Authorization
-- Product Listing & Search
-- Rental Booking System
-- Shopping Cart Management
-- Responsive EJS Templates
-- Image Upload & Management
-
-## 📦 Installation
-
-1. **Clone Repository**
-   
-   git clone https://github.com/yourusername/gearlend-rentals.git
-   cd gearlend-rentals/backend
-   
-
-2. **Install Dependencies**
- 
-   npm install
-   
-
-3. **Database Setup**
-   - Create MySQL database 'gearlend'
-   - Update .env with your credentials
-
-4. **Run Application**
-   
-   npm run dev
-  
-
-5. **Access Application**
-   - Frontend: http://localhost:5000
-   - API: http://localhost:5000/api
+**Frontend:** EJS, Tailwind CSS, JavaScript  
+**Backend:** Node.js, Express.js  
+**Database:** MySQL with complex data structures  
+**Authentication:** JWT, bcryptjs  
+**File Upload:** Multer
 
 ## 🗂️ Project Structure
 
-gearlend-rentals/
-├── backend/
-│   ├── views/           # EJS Templates
-│   ├── public/          # Static assets
-│   ├── src/            # Source code
-│   ├── uploads/         # File storage
-│   └── server.js       # Main application
-├── README.md
-└── .gitignore
+\\\
+GearLend---Tech-Rental-Platform/
+├── views/                 # EJS Templates
+│   ├── partials/         # Header, Footer
+│   └── pages/           # Main pages
+├── public/              # Static assets
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── uploads/             # User uploaded files
+└── server.js           # Main application file
+\\\
 
-## 🔗 API Endpoints
-- \GET /api/gadgets\" - Fetch all gadgets
-- \POST /api/auth/register\" - User registration
-- \POST /api/rentals\" - Create rental order
+## 🚀 Quick Start
 
-## 📊 Data Flow
-1. Client Request → Express Routes
-2. Controllers → Business Logic
-3. Models → Database Queries
-4. EJS Templates → HTML Response
+\\\ash
+# Clone repository
+git clone https://github.com/IanKibiwott/GearLend---Tech-Rental-Platform.git
+
+# Install dependencies
+npm install
+
+# Setup environment variables
+cp .env.example .env
+
+# Start development server
+npm run dev
+\\\
+
+Visit: http://localhost:5000
+
+## 📊 Data Structures Implemented
+
+- **Arrays:** User collections, product listings
+- **Objects:** Entity representations with nested properties
+- **JSON:** Complex data storage (specifications, availability)
+- **Enums:** Status tracking and role management
+- **Relational Data:** Foreign keys and database relationships
 
 ## 🤝 Contributing
-1. Fork the repository
-2. Create feature branch
-3. Commit changes
-4. Push to branch
-5. Create Pull Request
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
-MIT License - see LICENSE file for details
 
-## 👥 Authors
-- Ian Kibiwott - Initial work
+This project is licensed under the MIT License.
 
-## 🙏 Acknowledgments
-- Express.js team
-- Tailwind CSS
-- MySQL community
+---
+⭐ Star this repo if you find it helpful!
