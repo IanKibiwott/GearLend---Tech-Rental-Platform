@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body class='bg-gray-50 min-h-screen'>
+    <header class='bg-white shadow-lg border-b'>
+        <nav class='max-w-7xl mx-auto px-4'>
+            <div class='flex justify-between items-center h-16'>
+                <a href='/' class='flex items-center space-x-2'>
+                    <i class='fas fa-camera text-2xl text-blue-600'></i>
+                    <span class='text-xl font-bold text-gray-900'>GearLend</span>
+                </a>
+                <div class='flex items-center space-x-6'>
+                    <a href='/' class='text-gray-700 hover:text-blue-600'>Home</a>
+                    <a href='/gadgets' class='text-gray-700 hover:text-blue-600'>Browse Gadgets</a>
+                    <a href='/dashboard' class='text-blue-600 font-medium'>Dashboard</a>
+                    <a href='/login' class='text-gray-700 hover:text-blue-600'>Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class='max-w-6xl mx-auto px-4 py-8'>
+        <div class='bg-white rounded-lg shadow-lg p-8'>
+            <h1 class='text-3xl font-bold text-gray-800 mb-2'>Welcome, <%= user.name %>! ??</h1>
+            <p class='text-gray-600 mb-8'>Email: <%= user.email %></p>
+            
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-6 mb-8'>
+                <div class='bg-blue-50 p-6 rounded-lg'>
+                    <h3 class='text-lg font-semibold text-blue-800 mb-2'>Your Rentals</h3>
+                    <p class='text-3xl font-bold text-blue-600'>0</p>
+                    <p class='text-sm text-blue-600'>Active rentals</p>
+                </div>
+                <div class='bg-green-50 p-6 rounded-lg'>
+                    <h3 class='text-lg font-semibold text-green-800 mb-2'>Wallet</h3>
+                    <p class='text-3xl font-bold text-green-600'></p>
+                    <p class='text-sm text-green-600'>Available balance</p>
+                </div>
+                <div class='bg-purple-50 p-6 rounded-lg'>
+                    <h3 class='text-lg font-semibold text-purple-800 mb-2'>Reviews</h3>
+                    <p class='text-3xl font-bold text-purple-600'>0</p>
+                    <p class='text-sm text-purple-600'>Total reviews</p>
+                </div>
+            </div>
+            
+            <div class='border-t pt-6'>
+                <h3 class='text-xl font-semibold mb-4'>Quick Actions</h3>
+                <div class='space-y-3'>
+                    <a href='/gadgets' class='block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-center'>
+                        Browse Gadgets
+                    </a>
+                    <button class='w-full bg-gray-200 text-gray-700 px-6 py-3 rounded-lg text-center'>
+                        List Your Gear (Coming Soon)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
